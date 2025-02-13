@@ -80,8 +80,7 @@ This project also includes a **Django-based e-commerce website** to demonstrate 
 
 ---
 ## Contributors
-- **Your Name** – *Developer*
-- **Other Team Members**
+- **Myself and Other Team Members**
 
 ---
 ## License
@@ -90,5 +89,5 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 ---
 ## Contact
 For any inquiries, feel free to reach out:
-📧 Email: your-email@example.com  
-🔗 GitHub: [yourusername](https://github.com/yourusername)
+📧 Email: mhsanto03@gmail.com  
+🔗 GitHub: [MohammadMehedy](https://github.com/MohammadMehedy)
