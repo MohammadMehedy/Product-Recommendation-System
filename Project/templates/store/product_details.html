@@ -1,0 +1,33 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<div style="display: flex; padding: 20px; margin-top: 50px;">
+    
+    <div style="width: 400px;" class="box-element product" class="col-lg-4">
+        <img class="thumbnail" src="{{ product.imageURL }}">
+        <h6><strong>{{ product.name }}</strong></h6>
+        <hr>
+        <button data-product={{ product.id }} data-action="add"class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+
+        <h4 style="display: inline-block; float: right;"><strong>Tk: {{ product.price|floatformat:2 }}</strong></h4>
+    </div>
+    <div style="padding: 50px;" class="col-lg-8">
+        <div class="shadow-sm p-2 mb-5 bg-white rounded">
+            <h3>Description</h3>
+        </div>
+        <p>{{product.description|linebreaks}}</p>
+    </div>
+</div>
+<br><br><hr><br>
+<div class="shadow p-2 mb-5 bg-white rounded">
+    <h3>User Rating:</h3>
+</div>
+<div class="shadow-none p-3 mb-5 bg-light rounded">
+    {% for r in userrating %}
+    <h5>Customer Name: {{r.customer}}  Rating: {{r.rating}}</h5>
+    <p>{{r.comment}}</p>
+    {% endfor %}
+</div>
+
+{% endblock content %}

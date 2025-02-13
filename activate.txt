@@ -1,0 +1,3 @@
+cd E:\CSE479\Project
+activate myDjangoEnv
+python manage.py run server

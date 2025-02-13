@@ -1,0 +1,16 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <h3 style="margin-top: 50px;">Registration</h3>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <input type="submit" name="Create User">
+
+    </form>
+</div>
+
+{% endblock content %}
